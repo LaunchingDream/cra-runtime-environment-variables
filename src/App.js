@@ -17,6 +17,13 @@ function App() {
         >
           Learn React
         </a>
+        <p>API_URL: {window._env_.API_URL}</p>
+        <p>USE_CATALOG: {window._env_.USE_CATALOG}</p>
+        { window._env_.USE_CATALOG === 'true' &&
+          <button>
+            TEST
+          </button>
+        }
       </header>
     </div>
   );
